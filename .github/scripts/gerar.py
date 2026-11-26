@@ -174,11 +174,10 @@ def robux(rnd):
     frase = escape(rnd.choice(FRASES))
     qtd = rnd.randint(0, 3)
     inner = (f'<g font-family="{MONO}" text-anchor="middle">'
-             f'<text x="440" y="30" font-size="12" fill="#8b949e" letter-spacing="2">FRASE DO ROBUX DA HORA</text>'
-             f'<text x="440" y="64" font-size="20" font-weight="600" fill="#ffffff">{frase}'
+             f'<text x="440" y="44" font-size="20" font-weight="600" fill="#ffffff">{frase}'
              f'<tspan fill="#ffffff"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.55;1" dur="1s" repeatCount="indefinite"/>_</tspan></text>'
-             f'<text x="440" y="90" font-size="11" fill="#6e7681">Robux recebidos nesta hora: {qtd}</text></g>')
-    return card(880, 108, inner)
+             f'<text x="440" y="68" font-size="11" fill="#6e7681">Robux recebidos nesta hora: {qtd}</text></g>')
+    return card(880, 88, inner)
 
 
 def ascii_art(rnd):
