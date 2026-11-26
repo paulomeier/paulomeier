@@ -24,6 +24,9 @@ Player IPTV para Windows (Xtream Codes e M3U), com início no estilo Apple TV, e
 
 </td>
 </tr>
+</table>
+
+<table>
 <tr>
 <td width="140" align="center" valign="middle"><img src="assets/bemsup.svg" width="110" alt="Logo do BemSup" /></td>
 <td valign="middle">
