@@ -49,6 +49,8 @@ Sistema de chamados integrado ao **GLPI** e a uma **IA local**: responde parte d
   <img alt="Cobrinha comendo as contribuições" src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake-dark.svg?v=3" width="100%" />
 </picture>
 
+<img src="assets/swag-for-life.avif" width="100%" alt="swag for life" />
+
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:30363d,50:161b22,100:000000&height=110&section=footer" width="100%"/>
