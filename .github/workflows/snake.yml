@@ -1,8 +1,8 @@
-name: Cobrinha das contribuições
+name: Partes dinâmicas do perfil
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # sorteia um campo novo a cada 12 horas
+    - cron: "0 * * * *"      # sorteia tudo de novo a cada hora
   workflow_dispatch:          # permite rodar manualmente
   push:
     branches: [main]
@@ -17,8 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Gerar a cobrinha comendo coisas aleatórias
-        run: python3 .github/scripts/snake.py
+      - name: Gerar cobrinha, frase do Robux, arte ASCII e galeria
+        run: python3 .github/scripts/gerar.py
 
       - name: Publicar no branch output
         uses: crazy-max/ghaction-github-pages@v4
