@@ -41,6 +41,8 @@ Sistema de chamados integrado ao **GLPI** e a uma **IA local**: responde parte d
 
 <div align="center">
 
+<a href="https://discord.com/invite/CJ6qjPdT"><img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/discord.svg?v=1" width="100%" alt="Servidor do Discord Esconderijo Secreto: quem está online e em call" /></a>
+
 <img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/ascii.svg?v=1" width="100%" alt="Gatinho em arte ASCII com chuva de caracteres" />
 
 <a href="https://open.spotify.com/user/317fmj2nnzits3krdaottnrf4fui"><img src="https://spotify-github-profile.kittinanx.com/api/view?uid=317fmj2nnzits3krdaottnrf4fui&cover_image=true&theme=novatorem&show_offline=true&background_color=0d1117&bar_color=ffffff&interchange=true" alt="Música tocando agora no Spotify" /></a>
