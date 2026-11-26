@@ -167,10 +167,11 @@ CAT = [
 ]
 
 
-def card(w, h, inner):
+def card(w, h, inner, borda=True):
+    contorno = (f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="10" fill="none" stroke="#30363d" stroke-opacity=".6"/>'
+                if borda else "")
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}">'
-            f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="10" fill="none" stroke="#30363d" stroke-opacity=".6"/>'
-            f'{inner}</svg>')
+            f'{contorno}{inner}</svg>')
 
 
 def robux(rnd):
@@ -279,7 +280,7 @@ def discord():
              f'{ponto}<text x="134" y="70" font-size="13" fill="{"#ffffff" if ativo else "#8b949e"}">{escape(sala["name"])} · {quem}</text>'
              f'<text x="{w - 32}" y="44" font-size="12" fill="#8b949e" text-anchor="end">{j.get("presence_count", 0)} online</text>'
              f'<text x="{w - 32}" y="70" font-size="12" fill="#8b949e" text-anchor="end">entrar ›</text></g>')
-    return card(w, h, inner)
+    return card(w, h, inner, borda=False)
 
 
 def main():
