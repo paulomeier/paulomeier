@@ -168,7 +168,7 @@ CAT = [
 
 
 def card(w, h, inner, borda=True):
-    contorno = (f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="10" fill="none" stroke="#30363d" stroke-opacity=".6"/>'
+    contorno = (f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="10" fill="none" stroke="#30363d" stroke-width="1"/>'
                 if borda else "")
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}">'
             f'{contorno}{inner}</svg>')
