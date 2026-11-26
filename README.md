@@ -50,9 +50,9 @@ Sistema de chamados integrado ao **GLPI** e a uma **IA local**: responde parte d
 ### 🐍 Contribuições
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake.svg" />
-  <img alt="Cobrinha comendo as contribuições" src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake-dark.svg?v=2" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake.svg?v=2" />
+  <img alt="Cobrinha comendo as contribuições" src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake-dark.svg?v=2" width="100%" />
 </picture>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:30363d,50:161b22,100:000000&height=110&section=footer" width="100%"/>
