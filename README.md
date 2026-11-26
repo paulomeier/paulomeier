@@ -43,7 +43,7 @@ Sistema de chamados integrado ao **GLPI** e a uma **IA local**: responde parte d
 
 <div align="center">
 
-<a href="https://open.spotify.com/user/317fmj2nnzits3krdaottnrf4fui"><img src="https://spotify-github-profile.kittinanx.com/api/view?uid=317fmj2nnzits3krdaottnrf4fui&cover_image=true&theme=default&show_offline=true&background_color=0d1117&bar_color=ffffff&bar_color_cover=false&border_radius=10" alt="Música tocando agora no Spotify" /></a>
+<a href="https://open.spotify.com/user/317fmj2nnzits3krdaottnrf4fui"><img src="https://spotify-github-profile.kittinanx.com/api/view?uid=317fmj2nnzits3krdaottnrf4fui&cover_image=true&theme=novatorem&show_offline=true&background_color=0d1117&bar_color=ffffff&interchange=true" alt="Música tocando agora no Spotify" /></a>
 
 </div>
 
