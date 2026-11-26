@@ -44,9 +44,9 @@ Sistema de chamados integrado ao **GLPI** e a uma **IA local**: responde parte d
 <a href="https://open.spotify.com/user/317fmj2nnzits3krdaottnrf4fui"><img src="https://spotify-github-profile.kittinanx.com/api/view?uid=317fmj2nnzits3krdaottnrf4fui&cover_image=true&theme=novatorem&show_offline=true&background_color=0d1117&bar_color=ffffff&interchange=true" alt="Música tocando agora no Spotify" /></a>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake-dark.svg?v=2" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake.svg?v=2" />
-  <img alt="Cobrinha comendo as contribuições" src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake-dark.svg?v=2" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake-dark.svg?v=3" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake.svg?v=3" />
+  <img alt="Cobrinha comendo as contribuições" src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake-dark.svg?v=3" width="100%" />
 </picture>
 
 </div>
