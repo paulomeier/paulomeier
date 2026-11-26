@@ -6,6 +6,8 @@
 
 <img src="https://komarev.com/ghpvc/?username=paulomeier&style=for-the-badge&color=0d1117&label=%F0%9F%91%81%EF%B8%8F+VISITANTES" alt="Visitantes" />
 
+<img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/robux.svg?v=1" width="100%" alt="Frase aleatória sobre Robux" />
+
 </div>
 
 ---
@@ -41,6 +43,8 @@ Sistema de chamados integrado ao **GLPI** e a uma **IA local**: responde parte d
 
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/ascii.svg?v=1" width="100%" alt="Gatinho em arte ASCII com chuva de caracteres" />
+
 <a href="https://open.spotify.com/user/317fmj2nnzits3krdaottnrf4fui"><img src="https://spotify-github-profile.kittinanx.com/api/view?uid=317fmj2nnzits3krdaottnrf4fui&cover_image=true&theme=novatorem&show_offline=true&background_color=0d1117&bar_color=ffffff&interchange=true" alt="Música tocando agora no Spotify" /></a>
 
 <picture>
@@ -49,7 +53,7 @@ Sistema de chamados integrado ao **GLPI** e a uma **IA local**: responde parte d
   <img alt="Cobrinha comendo as contribuições" src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/github-snake-dark.svg?v=3" width="100%" />
 </picture>
 
-<img src="assets/swag-for-life.avif" width="100%" alt="swag for life" />
+<img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/galeria.svg?v=1" width="100%" alt="Imagem da galeria (troca a cada hora)" />
 
 </div>
 
