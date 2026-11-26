@@ -2,13 +2,17 @@ name: Partes dinâmicas do perfil
 
 on:
   schedule:
-    - cron: "0 * * * *"      # sorteia tudo de novo a cada hora
+    - cron: "*/5 * * * *"    # Discord a cada 5 min; o resto muda a cada hora
   workflow_dispatch:          # permite rodar manualmente
   push:
     branches: [main]
 
 permissions:
   contents: write
+
+concurrency:
+  group: perfil
+  cancel-in-progress: true
 
 jobs:
   snake:
@@ -17,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Gerar cobrinha, frase do Robux, arte ASCII e galeria
+      - name: Gerar cobrinha, arte ASCII, galeria e card do Discord
         run: python3 .github/scripts/gerar.py
 
       - name: Publicar no branch output
