@@ -20,10 +20,7 @@
 #### 📺 BemCat
 Player IPTV para Windows (Xtream Codes e M3U), com início no estilo Apple TV, efeito acrílico do Windows 11, player completo e **controle pelo celular via QR Code**.
 
-<img src="https://img.shields.io/badge/C%23-21262d?style=flat-square" />
-<img src="https://img.shields.io/badge/WebView2-21262d?style=flat-square" />
-<img src="https://img.shields.io/badge/JavaScript-21262d?style=flat-square" />
-<img src="https://img.shields.io/badge/MPV_Player-21262d?style=flat-square" />
+<img src="assets/tags-bemcat.svg" alt="C#, WebView2, JavaScript, MPV Player" />
 
 </td>
 </tr>
@@ -34,25 +31,13 @@ Player IPTV para Windows (Xtream Codes e M3U), com início no estilo Apple TV, e
 #### 🎫 BemSup
 Sistema de chamados integrado ao **GLPI** e a uma **IA local**: responde parte dos chamados sozinho e monta um **banco de soluções** para agilizar o atendimento.
 
-<img src="https://img.shields.io/badge/GLPI-21262d?style=flat-square" />
-<img src="https://img.shields.io/badge/IA_local-21262d?style=flat-square" />
-<img src="https://img.shields.io/badge/PHP-21262d?style=flat-square" />
-<img src="https://img.shields.io/badge/JavaScript-21262d?style=flat-square" />
+<img src="assets/tags-bemsup.svg" alt="GLPI, IA local, PHP, JavaScript" />
 
 </td>
 </tr>
 </table>
 
 ---
-
-### 📊 Estatísticas
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=paulomeier&show_icons=true&locale=pt-br&hide_border=true&bg_color=0d1117&title_color=ffffff&text_color=c9d1d9&icon_color=ffffff&ring_color=ffffff&border_radius=10" alt="Estatísticas do GitHub" />
-<img height="170" src="https://streak-stats.demolab.com?user=paulomeier&locale=pt_BR&hide_border=true&border_radius=10&background=0D1117&stroke=30363D&ring=FFFFFF&fire=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=FFFFFF&sideLabels=C9D1D9&dates=8B949E" alt="Sequência de dias" />
-
-</div>
 
 ### 🎧 Tocando agora
 
