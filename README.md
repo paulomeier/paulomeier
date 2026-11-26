@@ -12,33 +12,9 @@
 
 ### 🚀 Projetos
 
-<table>
-<tr>
-<td width="140" align="center" valign="middle"><img src="assets/bemcat.svg" width="110" alt="Logo do BemCat" /></td>
-<td valign="middle">
+<img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/projeto-bemcat.svg?v=1" width="100%" alt="BemCat: player IPTV para Windows (Xtream Codes e M3U), com início no estilo Apple TV, efeito acrílico do Windows 11, player completo e controle pelo celular via QR Code. C#, WebView2, JavaScript, MPV Player." />
 
-#### 📺 BemCat
-Player IPTV para Windows (Xtream Codes e M3U), com início no estilo Apple TV, efeito acrílico do Windows 11, player completo e **controle pelo celular via QR Code**.
-
-<img src="assets/tags-bemcat.svg" alt="C#, WebView2, JavaScript, MPV Player" />
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="140" align="center" valign="middle"><img src="assets/bemsup.svg" width="110" alt="Logo do BemSup" /></td>
-<td valign="middle">
-
-#### 🎫 BemSup
-Sistema de chamados integrado ao **GLPI** e a uma **IA local**: responde parte dos chamados sozinho e monta um **banco de soluções** para agilizar o atendimento.
-
-<img src="assets/tags-bemsup.svg" alt="GLPI, IA local, PHP, JavaScript" />
-
-</td>
-</tr>
-</table>
+<img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/projeto-bemsup.svg?v=1" width="100%" alt="BemSup: sistema de chamados integrado ao GLPI e a uma IA local, que responde parte dos chamados sozinho e monta um banco de soluções para agilizar o atendimento. GLPI, IA local, PHP, JavaScript." />
 
 ---
 
