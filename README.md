@@ -12,9 +12,9 @@
 
 ### 🚀 Projetos
 
-<img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/projeto-bemcat.svg?v=1" width="100%" alt="BemCat: player IPTV para Windows (Xtream Codes e M3U), com início no estilo Apple TV, efeito acrílico do Windows 11, player completo e controle pelo celular via QR Code. C#, WebView2, JavaScript, MPV Player." />
+<img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/projeto-bemcat.svg?v=2" width="100%" alt="BemCat: player IPTV para Windows (Xtream Codes e M3U), com início no estilo Apple TV, efeito acrílico do Windows 11, player completo e controle pelo celular via QR Code. C#, WebView2, JavaScript, MPV Player." />
 
-<img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/projeto-bemsup.svg?v=1" width="100%" alt="BemSup: sistema de chamados integrado ao GLPI e a uma IA local, que responde parte dos chamados sozinho e monta um banco de soluções para agilizar o atendimento. GLPI, IA local, PHP, JavaScript." />
+<img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/projeto-bemsup.svg?v=2" width="100%" alt="BemSup: sistema de chamados integrado ao GLPI e a uma IA local, que responde parte dos chamados sozinho e monta um banco de soluções para agilizar o atendimento. GLPI, IA local, PHP, JavaScript." />
 
 ---
 
@@ -22,7 +22,7 @@
 
 <a href="https://discord.com/invite/CJ6qjPdT"><img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/discord.svg?v=4" width="100%" alt="Servidor do Discord Esconderijo Secreto: quem está online e em call" /></a>
 
-<img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/ascii.svg?v=3" width="100%" alt="Gatinho em arte ASCII com chuva de caracteres" />
+<img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/ascii.svg?v=4" width="100%" alt="Gatinho em arte ASCII com chuva de caracteres" />
 
 <a href="https://open.spotify.com/user/317fmj2nnzits3krdaottnrf4fui"><img src="https://spotify-github-profile.kittinanx.com/api/view?uid=317fmj2nnzits3krdaottnrf4fui&cover_image=true&theme=novatorem&show_offline=true&background_color=0d1117&bar_color=ffffff&interchange=true" alt="Música tocando agora no Spotify" /></a>
 
