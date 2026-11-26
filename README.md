@@ -44,7 +44,7 @@ Sistema de chamados integrado ao **GLPI** e a uma **IA local**: responde parte d
 
 <div align="center">
 
-<a href="https://discord.com/invite/CJ6qjPdT"><img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/discord.svg?v=3" width="100%" alt="Servidor do Discord Esconderijo Secreto: quem está online e em call" /></a>
+<a href="https://discord.com/invite/CJ6qjPdT"><img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/discord.svg?v=4" width="100%" alt="Servidor do Discord Esconderijo Secreto: quem está online e em call" /></a>
 
 <img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/ascii.svg?v=3" width="100%" alt="Gatinho em arte ASCII com chuva de caracteres" />
 
