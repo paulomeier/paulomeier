@@ -1,0 +1,32 @@
+name: Cobrinha das contribuições
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"   # a cada 12 horas
+  workflow_dispatch:          # permite rodar manualmente
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Gerar a cobrinha (preto e branco)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake-dark.svg?color_snake=#ffffff&color_dots=#161b22,#3a3a3a,#6e6e6e,#a8a8a8,#ffffff
+            dist/github-snake.svg?color_snake=#000000&color_dots=#ebedf0,#c6c6c6,#9a9a9a,#5c5c5c,#1a1a1a
+
+      - name: Publicar no branch output
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
