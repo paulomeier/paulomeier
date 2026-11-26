@@ -169,7 +169,7 @@ CAT = [
 
 def card(w, h, inner):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}">'
-            f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="10" fill="#0d1117" stroke="#30363d"/>'
+            f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="10" fill="#0d1117" fill-opacity=".35" stroke="#30363d" stroke-opacity=".6"/>'
             f'{inner}</svg>')
 
 
@@ -209,7 +209,7 @@ def ascii_art(rnd):
                          f'lengthAdjust="spacing" xml:space="preserve">{escape(l)}</text>')
     inner = (f'<clipPath id="c"><rect width="{w}" height="{h}" rx="10"/></clipPath>'
              f'<g clip-path="url(#c)">{"".join(rain)}</g>'
-             f'<rect x="{x0 - 14:.0f}" y="10" width="{58 * cw + 28:.0f}" height="{h - 20}" rx="8" fill="#0d1117" fill-opacity=".72"/>'
+             f'<rect x="{x0 - 14:.0f}" y="10" width="{58 * cw + 28:.0f}" height="{h - 20}" rx="8" fill="#0d1117" fill-opacity=".3"/>'
              f'<g font-family="{MONO}" font-size="8" fill="#e6edf3">{"".join(lines)}'
              f'<animate attributeName="opacity" values="1;1;.55;1;1;.8;1" keyTimes="0;.9;.91;.92;.95;.96;1" dur="6s" repeatCount="indefinite"/></g>')
     return card(w, h, inner)
