@@ -4,8 +4,11 @@
 - dist/robux.svg: frase aleatória sobre Robux
 - dist/ascii.svg: gatinho em arte ASCII com chuva estilo Matrix
 - dist/galeria.svg: imagem sorteada de assets/galeria/
+- dist/discord.svg: servidor do Discord, quem está online e quem está em call
 """
 import base64
+import json
+import urllib.request
 import glob
 import os
 import random
@@ -227,6 +230,54 @@ def galeria(rnd):
             f'</svg>')
 
 
+DISCORD_ID = "686115365738381428"
+DISCORD_ICON = "M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+
+
+def discord():
+    url = f"https://discord.com/api/guilds/{DISCORD_ID}/widget.json"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (perfil paulomeier)"})
+        j = json.load(urllib.request.urlopen(req, timeout=20))
+    except Exception as e:  # sem internet ou widget desligado: mostra só o nome
+        print("discord:", e)
+        j = {"name": "Esconderijo Secreto", "presence_count": 0, "channels": [], "members": []}
+    canais = sorted(j.get("channels", []), key=lambda c: c.get("position", 0))
+    em_call = {}
+    for m in j.get("members", []):
+        if m.get("channel_id"):
+            em_call.setdefault(m["channel_id"], []).append(m.get("username", "?"))
+    total_call = sum(len(v) for v in em_call.values())
+    w = 880
+    linhas = []
+    y = 104
+    for c in canais:
+        nomes = em_call.get(c["id"], [])
+        ativo = bool(nomes)
+        cor = "#ffffff" if ativo else "#6e7681"
+        nome = escape(c["name"])
+        texto = escape(", ".join(nomes)) if ativo else "vazia"
+        pulso = ('<circle cx="40" cy="{0}" r="4" fill="#ffffff"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>'.format(y - 4)
+                 if ativo else f'<circle cx="40" cy="{y - 4}" r="3" fill="#30363d"/>')
+        linhas.append(f'{pulso}<text x="56" y="{y}" font-size="14" font-weight="600" fill="{cor}">{nome}</text>'
+                      f'<text x="{w - 32}" y="{y}" font-size="13" fill="{cor}" text-anchor="end">{texto}</text>')
+        y += 30
+    if not canais:
+        linhas.append(f'<text x="56" y="{y}" font-size="13" fill="#6e7681">Nenhum canal de voz visível</text>')
+        y += 30
+    status = (f"{total_call} em call agora" if total_call else "ninguém em call agora")
+    h = y + 10
+    inner = (f'<g font-family="{MONO}">'
+             f'<path transform="translate(32 26) scale(1.5)" fill="#ffffff" d="{DISCORD_ICON}"/>'
+             f'<text x="80" y="46" font-size="20" font-weight="700" fill="#ffffff">{escape(j.get("name", ""))}</text>'
+             f'<circle cx="86" cy="64" r="4" fill="#ffffff"><animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/></circle>'
+             f'<text x="98" y="68" font-size="12" fill="#8b949e">{j.get("presence_count", 0)} online · {status}</text>'
+             f'<text x="{w - 32}" y="46" font-size="12" fill="#8b949e" text-anchor="end">clique para entrar ›</text>'
+             f'<line x1="32" x2="{w - 32}" y1="82" y2="82" stroke="#21262d"/>'
+             f'{"".join(linhas)}</g>')
+    return card(w, h, inner)
+
+
 def main():
     hora = int(time.time() // 3600)
     rnd = random.Random(hora)
@@ -239,6 +290,7 @@ def main():
         "robux.svg": robux(rnd),
         "ascii.svg": ascii_art(rnd),
         "galeria.svg": galeria(rnd),
+        "discord.svg": discord(),
     }
     for nome, conteudo in saidas.items():
         open(os.path.join("dist", nome), "w").write(conteudo)
