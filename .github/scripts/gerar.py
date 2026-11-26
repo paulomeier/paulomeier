@@ -283,6 +283,44 @@ def discord():
     return card(w, h, inner, borda=False)
 
 
+FONTE = "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif"
+
+PROJETOS = {
+    "projeto-bemcat.svg": ("assets/bemcat.svg", "📺 BemCat", [
+        "Player IPTV para Windows (Xtream Codes e M3U), com início no estilo Apple TV,",
+        "efeito acrílico do Windows 11, player completo e **controle pelo celular via QR Code**.",
+    ], "assets/tags-bemcat.svg"),
+    "projeto-bemsup.svg": ("assets/bemsup.svg", "🎫 BemSup", [
+        "Sistema de chamados integrado ao **GLPI** e a uma **IA local**: responde parte dos",
+        "chamados sozinho e monta um **banco de soluções** para agilizar o atendimento.",
+    ], "assets/tags-bemsup.svg"),
+}
+
+
+def miolo(arquivo):
+    """Conteúdo de um SVG sem a tag <svg> de fora."""
+    s = open(arquivo, encoding="utf-8").read()
+    return s[s.index(">", s.index("<svg")) + 1:s.rindex("</svg>")]
+
+
+def linha_rica(texto):
+    partes = texto.split("**")
+    return "".join(f'<tspan font-weight="700" fill="#ffffff">{escape(p)}</tspan>' if i % 2 else escape(p)
+                   for i, p in enumerate(partes))
+
+
+def projeto(logo, titulo, linhas, tags):
+    w, h = 880, 150
+    texto = "".join(f'<text x="156" y="{76 + i * 22}" font-size="14" fill="#c9d1d9">{linha_rica(l)}</text>'
+                    for i, l in enumerate(linhas))
+    inner = (f'<g transform="translate(20 20) scale({110 / 240})">{miolo(logo)}</g>'
+             f'<g font-family="{FONTE}">'
+             f'<text x="156" y="46" font-size="16" font-weight="700" fill="#ffffff">{escape(titulo)}</text>'
+             f'{texto}</g>'
+             f'<g transform="translate(156 112)">{miolo(tags)}</g>')
+    return card(w, h, inner)
+
+
 def main():
     hora = int(time.time() // 3600)
     rnd = random.Random(hora)
@@ -296,9 +334,10 @@ def main():
         "ascii.svg": ascii_art(rnd),
         "galeria.svg": galeria(rnd),
         "discord.svg": discord(),
+        **{nome: projeto(*args) for nome, args in PROJETOS.items()},
     }
     for nome, conteudo in saidas.items():
-        open(os.path.join("dist", nome), "w").write(conteudo)
+        open(os.path.join("dist", nome), "w", encoding="utf-8").write(conteudo)
     print("hora", hora, "arquivos:", ", ".join(saidas))
 
 
