@@ -6,8 +6,6 @@
 
 <img src="https://komarev.com/ghpvc/?username=paulomeier&style=for-the-badge&color=0d1117&label=%F0%9F%91%81%EF%B8%8F+VISITANTES" alt="Visitantes" />
 
-<img src="https://raw.githubusercontent.com/paulomeier/paulomeier/output/robux.svg?v=2" width="100%" alt="Frase aleatória sobre Robux" />
-
 </div>
 
 ---
